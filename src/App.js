@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./assets/images/logo.svg";
+import gearLogo from "./assets/images/gear-logo-image.svg";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <div className="navigation-bar">
+        <img src={logo} alt="RC" />
+        <div className="navigation-bar__brand-name">Richmond Croft</div>
+      </div>
+      <div className="content">
+        <img className="content__icon" src={gearLogo} alt="Coming soon" />
+        <div className="content__text">
+          Development of the website is in progress..
+        </div>
+      </div>
     </div>
   );
 }
