@@ -1,0 +1,13 @@
+.navigation-menu-components{
+    color: white;
+    display: flex;
+    list-style-type: none;
+    gap: 15px;
+    font-size: larger;
+    justify-content: flex-end;
+    padding:  15px;
+}
+.navigation-menu-components:link{
+    color: #fff;
+}
+
