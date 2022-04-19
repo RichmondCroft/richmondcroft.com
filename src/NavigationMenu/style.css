@@ -1,0 +1,15 @@
+.navigation-menu{
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 10px;
+    font-size: large;
+}
+
+.navigation-menu-right-side-contents{
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+    cursor: pointer;
+}
