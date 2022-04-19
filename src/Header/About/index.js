@@ -1,5 +1,9 @@
 export default function About(){
     return(
-        <li>About Us</li>
+        <li>
+            <a href="#">
+            About Us
+            </a>
+            </li>
     )
     }

@@ -3,7 +3,7 @@ import NavigationMenu from './NavigationMenu';
 
 function App() {
   return (
-    <NavigationMenu/>
+    <NavigationMenu />
   );
 }
 

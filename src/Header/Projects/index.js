@@ -1,5 +1,9 @@
 export default function Projects(){
     return(
-        <li>Projects</li>
+        <li>
+            <a href="#">
+            Projects
+            </a>
+            </li>
     )
 }

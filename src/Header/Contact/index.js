@@ -1,5 +1,9 @@
 export default function Contact(){
     return(
-        <li>Contact</li>
+        <li>
+            <a href="#">
+            Contact
+            </a>
+            </li>
     )
 }
