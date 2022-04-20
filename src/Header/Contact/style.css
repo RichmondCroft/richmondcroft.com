@@ -4,40 +4,44 @@
     margin-left: 45px;
 }
 
-.form-email-text-submit{
+.form-email-text-submit {
     display: flex;
     flex-flow: column wrap;
     gap: 25px;
-    margin-left: 450px;  
+    margin-left: 450px;
     margin-top: 100px;
+
 }
 
-#email-id-box{
+#email-id-box {
     padding: 8px;
     background-color: black;
     border: 1px solid grey;
     border-radius: 10px;
     width: 250px;
+    color: #fff
 }
 
-#subject-text-input-box{
+#subject-text-input-box {
     padding: 8px;
     background-color: black;
     border: 1px solid grey;
     border-radius: 10px;
     width: 250px;
+    color: #fff
 }
 
-#enter-text-here-input-box{
+#enter-text-here-input-box {
     padding: 8px;
     background-color: black;
     border: 1px solid grey;
     border-radius: 10px;
     width: 250px;
     height: 200px;
+    color: #fff
 }
 
-#confirm-submit-button{
+#confirm-submit-button {
     width: 75px;
     border: 1px solid tomato;
     border-radius: 10px;
