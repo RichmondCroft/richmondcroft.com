@@ -2,24 +2,21 @@
     color: white;
     display: flex;
     list-style-type: none;
-    gap: 15px;
-    font-size: larger;
+    gap: 30px;
+    font-size: 25px;
     justify-content: flex-end;
     padding:  15px;
-}
-.navigation-menu-components:link{
-    text-decoration: none;
-    color: #fff;
 }
 
 .richmondCroft-logo-icon{
     padding: 12px;
     position: absolute;
     font-size: x-large;
+    display: flex;
+    gap: 15px;
 }
 
 .navigation-menu-tab-links{
     text-decoration: none;
     color: #fff;
-    
 }
