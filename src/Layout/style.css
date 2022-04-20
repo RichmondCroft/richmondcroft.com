@@ -8,6 +8,18 @@
     padding:  15px;
 }
 .navigation-menu-components:link{
+    text-decoration: none;
     color: #fff;
 }
 
+.richmondCroft-logo-icon{
+    padding: 12px;
+    position: absolute;
+    font-size: x-large;
+}
+
+.navigation-menu-tab-links{
+    text-decoration: none;
+    color: #fff;
+    
+}
