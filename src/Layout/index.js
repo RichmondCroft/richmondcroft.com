@@ -1,7 +1,7 @@
 import { Outlet, Link } from "react-router-dom";
+import './style.css'
 import RCLogo from '../Image/RCLogo.png'
 
-import './style.css'
 export default function Layout() {
     return (
         <>

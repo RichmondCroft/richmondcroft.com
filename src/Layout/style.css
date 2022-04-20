@@ -1,9 +1,8 @@
 .navigation-menu-components{
-    color: white;
     display: flex;
     list-style-type: none;
     gap: 30px;
-    font-size: 25px;
+    font-size: 20px;
     justify-content: flex-end;
     padding:  15px;
 }
