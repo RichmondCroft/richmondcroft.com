@@ -1,5 +1,4 @@
 .contact-page-content {
-    padding: 10px;
     margin-top: 20px;
     margin-left: 45px;
 }
@@ -9,8 +8,7 @@
     flex-flow: column wrap;
     gap: 25px;
     margin-left: 450px;
-    margin-top: 100px;
-
+    margin-top: 70px;
 }
 
 #email-id-box {
