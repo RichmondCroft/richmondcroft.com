@@ -2,37 +2,48 @@ import { useState } from 'react'
 import './style.css'
 
 export default function Contact() {
-    const [input, setInput] = useState({})
-    const handleChange = (e) => {
-        const name = e.target.name
-        const value = e.target.value
-        setInput(values=>({...values,[name]: value}))
+    const [myEmail, setMyEmail] = useState('')
+    const handleChangeOnEmail = (e) => {
+        setMyEmail(e.target.value)
     }
-    const handleOnSubmit = (event)=>{
+
+    const[mySubject,setMySubject] = useState('')
+    const handleChangeOnSubject = (e)=>{
+        setMySubject(e.target.value)
+    }
+
+    const [myText,setMyText] = useState('')
+    const handleChangeOnText = (e)=>{
+        setMyText(e.target.value)
+    }
+
+    const handleOnSubmit = (event) => {
         event.preventDefault()
     }
     return (
         <div className='contact-page-content'>
             <form className='form-email-text-submit'
                 onSubmit={handleOnSubmit}>
+                
                 <input type='email'
-                    name='emailId'
-                    value={input.emailId || ''}
-                    onChange={handleChange}
+                    placeholder='Email-Id'
+                    value={myEmail}
+                    onChange={handleChangeOnEmail}
                     id='email-id-box'
                 />
 
                 <input type='text'
-                    name = 'subject'
-                    value={input.subject || '' }
-                    onChange={handleChange}
+                    value={mySubject}
+                    placeholder='Subject'
                     id='subject-text-input-box'
+                    onChange={handleChangeOnSubject}
                 />
 
-                <input type='text'
-                    name = 'enterText'
-                    value={input.enterText || ''}
-                    onChange={handleChange}
+                <textarea
+                    placeholder='Enter Text'
+                    value={myText}
+                    onChange = {handleChangeOnText}
+                    rows='10'
                     id='enter-text-here-input-box'
                 />
 
