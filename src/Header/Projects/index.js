@@ -11,16 +11,10 @@ export default function Projects() {
 
             <ul>The tool aims for making web more accesible for
                 everyone by allowing user:
-                <li>
-                    Users can change their font size according
-                    to their needs.
-                </li>
-                <li>
-                    Change Background Color
-                </li>
-                <li>
-                    Highlight-Text.
-                </li>
+                <li>Users can change their font size according
+                    to their needs.</li>
+                <li>Change Background Color </li>
+                <li>Highlight-Text.</li>
             </ul>
         </div>
     )

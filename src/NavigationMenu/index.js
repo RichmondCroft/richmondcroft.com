@@ -1,5 +1,4 @@
 import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
-
 import './style.css'
 import Layout from "../Layout";
 import Home from "../Header/Home";
@@ -8,7 +7,6 @@ import About from "../Header/About";
 import Projects from "../Header/Projects";
 
 export default function NavigationMenu() {
-
     return <>
         <BrowserRouter>
             <Layout></Layout>
@@ -19,6 +17,5 @@ export default function NavigationMenu() {
                 <Route path='/contact' element={<Contact />}></Route>
             </Routes>
         </BrowserRouter>
-
     </>
 }

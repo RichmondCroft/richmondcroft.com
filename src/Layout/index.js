@@ -1,6 +1,6 @@
 import { Outlet, Link } from "react-router-dom";
-import './style.css'
 import RCLogo from '../Image/RCLogo.png'
+import './style.css'
 
 export default function Layout() {
     return (
@@ -10,7 +10,6 @@ export default function Layout() {
                     <div className="richmondCroft-logo-icon" >
                         <img src={RCLogo} alt='RC-logo' width='50px' />
                         Richmond Croft</div>
-
                     <ul className="navigation-menu-components">
                         <li>
                             <Link to='/' className="navigation-menu-tab-links">Home</Link>

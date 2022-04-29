@@ -6,17 +6,14 @@ export default function Contact() {
     const handleChangeOnEmail = (e) => {
         setMyEmail(e.target.value)
     }
-
     const [mySubject, setMySubject] = useState('')
     const handleChangeOnSubject = (e) => {
         setMySubject(e.target.value)
     }
-
     const [myText, setMyText] = useState('')
     const handleChangeOnText = (e) => {
         setMyText(e.target.value)
     }
-
     const handleOnSubmit = (event) => {
         event.preventDefault()
     }
