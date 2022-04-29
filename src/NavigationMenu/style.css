@@ -1,4 +1,4 @@
-.navigation-menu{
+.navigation-menu {
     display: flex;
     gap: 10px;
     padding: 15px;
@@ -7,17 +7,18 @@
 
 }
 
-.richmondCroft-logo{
+.richmondCroft-logo {
     display: flex;
     justify-content: center;
-    
+
 }
 
-.navigation-menu-right-side-contents{
+.navigation-menu-right-side-contents {
     list-style-type: none;
     display: flex;
     gap: 15px;
 }
-.navigation-menu-right-side-contents :link{
+
+.navigation-menu-right-side-contents :link {
     text-decoration: none;
 }
