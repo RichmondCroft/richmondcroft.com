@@ -19,6 +19,5 @@ export default function NavigationMenu() {
                     <Route path= '/contact' element = {<Contact/>}></Route>
             </Routes>
         </BrowserRouter>
-
     </>
 }
