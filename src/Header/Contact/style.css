@@ -14,7 +14,7 @@
 #email-id-box {
     padding: 8px;
     background-color: black;
-    border: 1px solid grey;
+    border: 1px solid #5c5c5c;
     border-radius: 10px;
     width: 250px;
     color: #fff
@@ -23,7 +23,7 @@
 #subject-text-input-box {
     padding: 8px;
     background-color: black;
-    border: 1px solid grey;
+    border: 1px solid #5c5c5c;
     border-radius: 10px;
     width: 250px;
     color: #fff
@@ -32,7 +32,7 @@
 #enter-text-here-input-box {
     padding: 8px;
     background-color: black;
-    border: 1px solid grey;
+    border: 1px solid #5c5c5c;
     border-radius: 10px;
     width: 250px;
     resize: vertical;
@@ -40,10 +40,10 @@
 }
 
 #confirm-submit-button {
-    width: 75px;
-    border: 1px solid tomato;
-    border-radius: 10px;
-    background-color: tomato;
+    height: 34px;
+    border: 1px solid #e63946;
+    border-radius: 16px;
+    background-color: #e63946;
     width: 200px;
     margin-left: 30px;
 }
