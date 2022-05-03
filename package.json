@@ -33,12 +33,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-<<<<<<< Updated upstream
-=======
   },
   "devDependencies": {
     "@testing-library/react": "^13.1.1",
     "react-router-dom": "^6.3.0"
->>>>>>> Stashed changes
   }
 }
