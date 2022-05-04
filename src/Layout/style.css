@@ -1,0 +1,21 @@
+.navigation-menu-components {
+    display: flex;
+    list-style-type: none;
+    gap: 30px;
+    font-size: 20px;
+    justify-content: flex-end;
+    padding: 15px;
+}
+
+.richmondCroft-logo-icon {
+    padding: 12px;
+    position: absolute;
+    font-size: x-large;
+    display: flex;
+    gap: 15px;
+}
+
+.navigation-menu-tab-links {
+    text-decoration: none;
+    color: #fff;
+}

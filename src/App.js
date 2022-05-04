@@ -1,11 +1,8 @@
 import './App.css';
+import NavigationMenu from './NavigationMenu';
 
-function App() {
+export default function App() {
   return (
-   <>
-      
-   </>
-  );
-}
-
-export default App;
+    <NavigationMenu />
+  )
+};
