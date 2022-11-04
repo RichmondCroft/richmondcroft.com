@@ -89,7 +89,7 @@ function ProjectDisplay({
       <ProjectIcon url={imageUrl} />
     </ProjectIconContainer>
     <ProjectDetails>
-      <ProjectName href={projectURL}>{projectName}</ProjectName>
+      <ProjectName href={projectURL} target='_blank'>{projectName}</ProjectName>
       <ProjectDescription>{description}</ProjectDescription>
     </ProjectDetails>
   </Project>
