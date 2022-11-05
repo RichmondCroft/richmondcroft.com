@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import Carousel from 'react-material-ui-carousel'
 import { Paper } from '@mui/material'
+import { useEffect, useState } from 'react';
 
 const DYSLENS_LINK = 'https://chrome.google.com/webstore/detail/dyslens/mpbkfbafkpkbpmgdcgkmonpfnodgfepo';
 
@@ -82,9 +83,13 @@ const Link = styled.a`
 const ProjectDescription = styled.p``;
 
 function DyslensProject() {
+  const [displayImage, setDisplayImage] = useState(false);
+  useEffect(() => {
+    setTimeout(() => setDisplayImage(true), 100)
+  }, []);
   return <Project>
     <ProjectIconContainer>
-      <ProjectIcon src='/img/dyslens-promo.png' />
+      {displayImage && <ProjectIcon src='/img/dyslens-promo.png' />}
     </ProjectIconContainer>
     <ProjectDetails>
       <ProjectName href={DYSLENS_LINK} target='_blank'>Dyslens</ProjectName>
