@@ -112,7 +112,7 @@ function DyslensProject() {
 }
 
 const StyledSlideContainer = styled.div<{ bgColor: string }>`
-  height: 300px;
+  height: 350px;
   background: ${({ bgColor }) => bgColor};
   display: flex;
   align-items: center;
