@@ -76,7 +76,7 @@ function Slide2() {
       <DyslensSlideContainer>
 
         <DyslensImageContainer>
-          <Image alt='Dyslens' src='./img/dyslens-icon.png' />
+          <Image width={80} height={80} alt='Dyslens' src='/img/dyslens-icon.png' />
         </DyslensImageContainer>
 
         <DyslensTitle>
