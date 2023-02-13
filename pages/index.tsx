@@ -1,84 +1,12 @@
 import styled from 'styled-components';
 import Carousel from 'react-material-ui-carousel'
+import Image from 'next/image';
 import { Paper } from '@mui/material'
 import { useEffect, useState } from 'react';
 
 const DYSLENS_LINK = 'https://chrome.google.com/webstore/detail/dyslens/mpbkfbafkpkbpmgdcgkmonpfnodgfepo';
 
 const Page = styled.div``;
-
-const Header = styled.div`
-  display: flex;
-  align-items: center;
-  padding: 1rem 4rem;
-  @media only screen and (max-width: 600px) {
-    padding: 1rem;
-  }
-`;
-
-const BrandIcon = styled.div`
-  height: 64px;
-  width: 64px;
-  background-image: url('./img/logo.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center center;
-`;
-
-const BrandName = styled.h2`
-  margin-left: 12px;
-`;
-
-const ContentsContainer = styled.div`
-  margin: 3rem 0;
-  padding: 0 4rem;
-  @media only screen and (max-width: 600px) {
-    padding: 1rem;
-  }
-`;
-
-const ProjectsContainer = styled.div`
-  margin-top: 2rem;
-`;
-
-const ProjectHeader = styled.h2`
-  margin-bottom: 1rem;
-  font-weight: normal;
-  color: #aaaaaa;
-  text-align: center;
-`;
-
-const Project = styled.div`
-  display: flex;
-  @media only screen and (max-width: 600px) {
-    flex-direction: column;
-  }
-`;
-
-const ProjectIconContainer = styled.div`
-  padding: 0 2rem 0 0;
-  flex: 4;
-  @media only screen and (max-width: 600px) {
-    padding: 0;
-  }
-`;
-const ProjectIcon = styled.img`
-  width: 100%;
-`;
-const ProjectDetails = styled.div`
-  flex: 8;
-  @media only screen and (max-width: 600px) {
-    margin-top: 1rem;
-  }
-`;
-const ProjectName = styled.a`
-  color: #E63946;
-  font-size: 2rem;
-`;
-
-const Link = styled.a`
-  color: #E63946;
-`;
 
 const ProjectDescription = styled.p``;
 
@@ -87,12 +15,13 @@ function DyslensProject() {
   useEffect(() => {
     setTimeout(() => setDisplayImage(true), 100)
   }, []);
-  return <Project>
-    <ProjectIconContainer>
-      {displayImage && <ProjectIcon src='/img/dyslens-promo.png' />}
-    </ProjectIconContainer>
-    <ProjectDetails>
-      <ProjectName href={DYSLENS_LINK} target='_blank'>Dyslens</ProjectName>
+
+  return <div className='home-project'>
+    <div className='home-project-icon-container'>
+      {displayImage && <Image alt='Dyslens' className='home-project-icon' src='/img/dyslens-promo.png' />}
+    </div>
+    <div className='home-project-details'>
+      <a className='home-project-name' href={DYSLENS_LINK} target='_blank' rel="noreferrer">Dyslens</a>
       <ProjectDescription>Dyslens is a open source chrome extension, built and designed to make web more accessible for people who have different reading needs and suffering with dyslexia.</ProjectDescription>
       <ProjectDescription>With Dyslens users can:</ProjectDescription>
       <ul>
@@ -102,35 +31,35 @@ function DyslensProject() {
       </ul>
 
       <p>
-        <Link href='https://github.com/RichmondCroft/dyslens' target='_blank'>Fork us on Github</Link>
+        <a className='home-link' href='https://github.com/RichmondCroft/dyslens' target='_blank' rel="noreferrer">Fork us on Github</a>
       </p>
       <p>
-        <Link href='DYSLENS_LINK' target='_blank'>Install on Chrome</Link>
+        <a className='home-link' href='DYSLENS_LINK' target='_blank' rel="noreferrer">Install on Chrome</a>
       </p>
-    </ProjectDetails>
-  </Project>
+    </div>
+  </div>
 }
 
-const StyledSlideContainer = styled.div<{ bgColor: string }>`
-  height: 350px;
-  background: ${({ bgColor }) => bgColor};
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem;
-  color: white;
-`;
+// const StyledSlideContainer = styled.div<{ bgColor: string }>`
+//   height: 350px;
+//   background: ${({ bgColor }) => bgColor};
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   padding: 2rem;
+//   color: white;
+// `;
 const SlideText = styled.h2`
   color: white;
   margin: 1rem;
 `;
 function Slide1() {
   return (<Paper>
-    <StyledSlideContainer bgColor='#111'>
+    <div className='home-styled-slide-container home-styled-slide-container__dark'>
       <SlideText>
         Richmond Croft is an open source community to create and collaborate on creative projects.
       </SlideText>
-    </StyledSlideContainer>
+    </div>
   </Paper>);
 }
 
@@ -143,22 +72,22 @@ const DyslensTitle = styled.h2`
 `;
 function Slide2() {
   return (<Paper>
-    <StyledSlideContainer bgColor='#333'>
+    <div className='home-styled-slide-container home-styled-slide-container__light'>
       <DyslensSlideContainer>
 
         <DyslensImageContainer>
-          <img src='./img/dyslens-icon.png' />
+          <Image alt='Dyslens' src='./img/dyslens-icon.png' />
         </DyslensImageContainer>
 
         <DyslensTitle>
-          We have officially launched <Link href={DYSLENS_LINK} target='_blank'>Dyslens</Link>!
+          We have officially launched <a className='home-link' href={DYSLENS_LINK} target='_blank' rel="noreferrer">Dyslens</a>!
         </DyslensTitle>
         <SlideText>
           Dyslens helps people with dyslexia to customize websites according to their needs.
         </SlideText>
 
       </DyslensSlideContainer>
-    </StyledSlideContainer>
+    </div>
   </Paper >);
 }
 
@@ -169,10 +98,12 @@ const StyledLi = styled.li`
 
 function SlideShow() {
   return (
-    <Carousel>
-      <Slide1 />
-      <Slide2 />
-    </Carousel>
+    <div className='home-slide-container-outer'>
+      <Carousel>
+        <Slide1 />
+        <Slide2 />
+      </Carousel>
+    </div>
   )
 }
 
@@ -180,19 +111,19 @@ function SlideShow() {
 export default function Home() {
   return (
     <Page>
-      <Header>
-        <BrandIcon />
-        <BrandName>Richmond Croft</BrandName>
-      </Header>
+      <div className='home-header'>
+        <div className='home-brand-icon' />
+        <h2 className='home-brand-name'>Richmond Croft</h2>
+      </div>
 
       <SlideShow />
 
-      <ContentsContainer>
-        <ProjectHeader>Our Projects</ProjectHeader>
-        <ProjectsContainer>
+      <div className='home-contents-container'>
+        <h2 className='home-project-header'>Our Projects</h2>
+        <div className='home-projects-container'>
           <DyslensProject />
-        </ProjectsContainer>
-      </ContentsContainer>
+        </div>
+      </div>
 
     </Page>
   )
