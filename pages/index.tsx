@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import Carousel from 'react-material-ui-carousel'
+import Image from 'next/image';
 import { Paper } from '@mui/material'
 import { useEffect, useState } from 'react';
 
@@ -17,10 +18,10 @@ function DyslensProject() {
 
   return <div className='home-project'>
     <div className='home-project-icon-container'>
-      {displayImage && <img className='home-project-icon' src='/img/dyslens-promo.png' />}
+      {displayImage && <Image alt='Dyslens' className='home-project-icon' src='/img/dyslens-promo.png' />}
     </div>
     <div className='home-project-details'>
-      <a className='home-project-name' href={DYSLENS_LINK} target='_blank'>Dyslens</a>
+      <a className='home-project-name' href={DYSLENS_LINK} target='_blank' rel="noreferrer">Dyslens</a>
       <ProjectDescription>Dyslens is a open source chrome extension, built and designed to make web more accessible for people who have different reading needs and suffering with dyslexia.</ProjectDescription>
       <ProjectDescription>With Dyslens users can:</ProjectDescription>
       <ul>
@@ -30,10 +31,10 @@ function DyslensProject() {
       </ul>
 
       <p>
-        <a className='home-link' href='https://github.com/RichmondCroft/dyslens' target='_blank'>Fork us on Github</a>
+        <a className='home-link' href='https://github.com/RichmondCroft/dyslens' target='_blank' rel="noreferrer">Fork us on Github</a>
       </p>
       <p>
-        <a className='home-link' href='DYSLENS_LINK' target='_blank'>Install on Chrome</a>
+        <a className='home-link' href='DYSLENS_LINK' target='_blank' rel="noreferrer">Install on Chrome</a>
       </p>
     </div>
   </div>
@@ -75,11 +76,11 @@ function Slide2() {
       <DyslensSlideContainer>
 
         <DyslensImageContainer>
-          <img src='./img/dyslens-icon.png' />
+          <Image alt='Dyslens' src='./img/dyslens-icon.png' />
         </DyslensImageContainer>
 
         <DyslensTitle>
-          We have officially launched <a className='home-link' href={DYSLENS_LINK} target='_blank'>Dyslens</a>!
+          We have officially launched <a className='home-link' href={DYSLENS_LINK} target='_blank' rel="noreferrer">Dyslens</a>!
         </DyslensTitle>
         <SlideText>
           Dyslens helps people with dyslexia to customize websites according to their needs.
